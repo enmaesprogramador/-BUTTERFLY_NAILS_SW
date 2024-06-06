@@ -43,20 +43,22 @@
             // 
             // unTextBox
             // 
-            unTextBox.Location = new Point(166, 301);
+            unTextBox.Font = new Font("Segoe UI", 12F);
+            unTextBox.Location = new Point(166, 299);
             unTextBox.Margin = new Padding(3, 2, 3, 2);
             unTextBox.Name = "unTextBox";
-            unTextBox.Size = new Size(215, 23);
+            unTextBox.Size = new Size(215, 29);
             unTextBox.TabIndex = 0;
             // 
             // passTextBox
             // 
+            passTextBox.Font = new Font("Segoe UI", 12F);
             passTextBox.Location = new Point(166, 333);
             passTextBox.Margin = new Padding(3, 2, 3, 2);
             passTextBox.Name = "passTextBox";
             passTextBox.PasswordChar = '*';
             passTextBox.PlaceholderText = "*";
-            passTextBox.Size = new Size(215, 23);
+            passTextBox.Size = new Size(215, 29);
             passTextBox.TabIndex = 1;
             // 
             // logButton
@@ -91,7 +93,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
-            label2.Location = new Point(64, 331);
+            label2.Location = new Point(62, 336);
             label2.Name = "label2";
             label2.Size = new Size(96, 21);
             label2.TabIndex = 4;
@@ -130,10 +132,10 @@
             // 
             panel2.BackColor = Color.DarkOrange;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 491);
+            panel2.Location = new Point(0, 506);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(461, 61);
+            panel2.Size = new Size(461, 46);
             panel2.TabIndex = 8;
             // 
             // panel1
@@ -142,7 +144,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(461, 80);
+            panel1.Size = new Size(461, 62);
             panel1.TabIndex = 9;
             // 
             // Login
