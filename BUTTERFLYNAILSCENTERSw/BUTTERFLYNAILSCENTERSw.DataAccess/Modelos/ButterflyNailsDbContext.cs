@@ -7,7 +7,7 @@ namespace BUTTERFLYNAILSCENTERSw.DataAccess.Modelos;
 
 public partial class ButterflyNailsDbContext : DbContext
 {
-    const string conString = "server=localhost;port=3306;database=BUTTERFLY_NAILS_DB;user=root;password=*-.3nM4Nu310202.-*";
+    const string conString = "server=localhost;port=3306;database=BUTTERFLY_NAILS_DB;user=Tannymarr;password=TannyMarrRodriguez20._";
     public ButterflyNailsDbContext()
     {
     }

@@ -24,7 +24,7 @@ namespace BUTTERFLYNAILSCENTERSw
             {
                 using (var _DBContext = new ButterflyNailsDbContext())
                 {
-                    var nuevoUsuario = new Cliente
+                    var nuevoCliente = new Cliente
                     {
                         Nombre = nCliente.Text,
                         NumeroDeTelefono = telCliente.Text,
@@ -32,7 +32,15 @@ namespace BUTTERFLYNAILSCENTERSw
                         FechaDeRegistro = DateTime.Now
                     };
 
-                    _DBContext.Clientes.Add(nuevoUsuario);
+                    bool clienteExiste = _DBContext.Clientes.Any(cliente => cliente.Nombre == nuevoCliente.Nombre);
+
+                    if (clienteExiste)
+                    {
+                        MessageBox.Show("Este cliente existe. ");
+                        return;
+                    }
+
+                    _DBContext.Clientes.Add(nuevoCliente);
                     _DBContext.SaveChanges();
 
                     MessageBox.Show("Cliente añadido correctamente.");

@@ -40,6 +40,14 @@ namespace BUTTERFLYNAILSCENTERSw
                         FechaRegistro = DateTime.Now
                     };
 
+                    bool usuarioExiste = _DBContext.Usuarios.Any(usuario => usuario.Username == nuevoUsuario.Username);
+
+                    if (usuarioExiste)
+                    {
+                        MessageBox.Show("Este usuario existe. ");
+                        return;
+                    }
+
                     _DBContext.Usuarios.Add(nuevoUsuario);
                     _DBContext.SaveChanges();
 

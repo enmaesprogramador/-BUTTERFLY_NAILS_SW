@@ -40,7 +40,7 @@ namespace BUTTERFLYNAILSCENTERSw
                     _DBContext.Servicios.Add(nuevoServicio);
                     _DBContext.SaveChanges();
 
-                    MessageBox.Show("Usuario añadido correctamente.");
+                    MessageBox.Show("Servicio añadido correctamente.");
                 }
             }
             catch (Exception ex)
