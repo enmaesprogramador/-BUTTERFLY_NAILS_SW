@@ -35,38 +35,43 @@
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
-            panel1 = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // unTextBox
             // 
-            unTextBox.Location = new Point(230, 367);
+            unTextBox.Location = new Point(166, 301);
+            unTextBox.Margin = new Padding(3, 2, 3, 2);
             unTextBox.Name = "unTextBox";
-            unTextBox.Size = new Size(245, 27);
+            unTextBox.Size = new Size(215, 23);
             unTextBox.TabIndex = 0;
             // 
             // passTextBox
             // 
-            passTextBox.Location = new Point(230, 409);
+            passTextBox.Location = new Point(166, 333);
+            passTextBox.Margin = new Padding(3, 2, 3, 2);
             passTextBox.Name = "passTextBox";
             passTextBox.PasswordChar = '*';
             passTextBox.PlaceholderText = "*";
-            passTextBox.Size = new Size(245, 27);
+            passTextBox.Size = new Size(215, 23);
             passTextBox.TabIndex = 1;
             // 
             // logButton
             // 
-            logButton.BackColor = Color.HotPink;
+            logButton.BackColor = Color.Transparent;
+            logButton.BackgroundImage = (Image)resources.GetObject("logButton.BackgroundImage");
+            logButton.BackgroundImageLayout = ImageLayout.Stretch;
             logButton.FlatAppearance.BorderSize = 0;
             logButton.FlatStyle = FlatStyle.Flat;
             logButton.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             logButton.ForeColor = Color.Black;
-            logButton.Location = new Point(60, 485);
+            logButton.Location = new Point(40, 417);
+            logButton.Margin = new Padding(3, 2, 3, 2);
             logButton.Name = "logButton";
-            logButton.Size = new Size(189, 40);
+            logButton.Size = new Size(165, 30);
             logButton.TabIndex = 2;
             logButton.Text = "ENTRAR";
             logButton.UseVisualStyleBackColor = false;
@@ -75,75 +80,80 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F);
-            label1.Location = new Point(49, 369);
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
+            label1.Location = new Point(88, 302);
             label1.Name = "label1";
-            label1.Size = new Size(172, 25);
+            label1.Size = new Size(70, 21);
             label1.TabIndex = 3;
-            label1.Text = "Nombre de Usuario:";
+            label1.Text = "Usuario:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.8F);
-            label2.Location = new Point(116, 409);
+            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
+            label2.Location = new Point(64, 331);
             label2.Name = "label2";
-            label2.Size = new Size(105, 25);
+            label2.Size = new Size(96, 21);
             label2.TabIndex = 4;
             label2.Text = "Contraseña:";
             // 
             // button1
             // 
-            button1.BackColor = Color.HotPink;
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(297, 485);
+            button1.Location = new Point(248, 417);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(178, 40);
+            button1.Size = new Size(156, 30);
             button1.TabIndex = 5;
             button1.Text = "SALIR";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.HotPink;
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(529, 62);
-            panel1.TabIndex = 6;
-            // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.LOGO_MAGIC;
-            pictureBox1.Location = new Point(82, 121);
+            pictureBox1.Image = Properties.Resources.GelMagic;
+            pictureBox1.Location = new Point(12, 85);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(380, 195);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(437, 173);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.HotPink;
+            panel2.BackColor = Color.DarkOrange;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 573);
+            panel2.Location = new Point(0, 491);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(529, 33);
+            panel2.Size = new Size(461, 61);
             panel2.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DarkOrange;
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(461, 80);
+            panel1.TabIndex = 9;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(529, 606);
+            ClientSize = new Size(461, 552);
+            Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(pictureBox1);
-            Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -152,6 +162,7 @@
             Controls.Add(unTextBox);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -167,8 +178,8 @@
         private Label label1;
         private Label label2;
         private Button button1;
-        private Panel panel1;
         private PictureBox pictureBox1;
         private Panel panel2;
+        private Panel panel1;
     }
 }

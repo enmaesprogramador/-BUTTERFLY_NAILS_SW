@@ -40,40 +40,46 @@
             // 
             // nCliente
             // 
-            nCliente.Location = new Point(113, 342);
+            nCliente.Location = new Point(198, 311);
+            nCliente.Margin = new Padding(3, 2, 3, 2);
             nCliente.Name = "nCliente";
             nCliente.PlaceholderText = "Nombre";
-            nCliente.Size = new Size(249, 27);
+            nCliente.Size = new Size(218, 23);
             nCliente.TabIndex = 0;
             // 
             // telCliente
             // 
-            telCliente.Location = new Point(113, 470);
+            telCliente.Location = new Point(198, 407);
+            telCliente.Margin = new Padding(3, 2, 3, 2);
             telCliente.Name = "telCliente";
             telCliente.PlaceholderText = "Telefono";
-            telCliente.Size = new Size(249, 27);
+            telCliente.Size = new Size(218, 23);
             telCliente.TabIndex = 1;
             // 
             // dirCliente
             // 
-            dirCliente.Location = new Point(113, 599);
+            dirCliente.Location = new Point(198, 504);
+            dirCliente.Margin = new Padding(3, 2, 3, 2);
             dirCliente.Name = "dirCliente";
             dirCliente.PlaceholderText = "Direccion";
-            dirCliente.Size = new Size(249, 27);
+            dirCliente.Size = new Size(218, 23);
             dirCliente.TabIndex = 2;
             // 
             // regButton
             // 
-            regButton.BackColor = Color.HotPink;
+            regButton.BackColor = Color.Transparent;
+            regButton.BackgroundImage = Properties.Resources.naranja;
+            regButton.BackgroundImageLayout = ImageLayout.Stretch;
             regButton.FlatAppearance.BorderSize = 0;
             regButton.FlatAppearance.MouseOverBackColor = Color.LightPink;
             regButton.FlatStyle = FlatStyle.Flat;
-            regButton.Font = new Font("Segoe UI", 10.8F);
+            regButton.Font = new Font("Segoe UI", 14.25F);
             regButton.Image = Properties.Resources.icons8_signing_a_document_50;
             regButton.ImageAlign = ContentAlignment.MiddleLeft;
-            regButton.Location = new Point(40, 741);
+            regButton.Location = new Point(57, 707);
+            regButton.Margin = new Padding(3, 2, 3, 2);
             regButton.Name = "regButton";
-            regButton.Size = new Size(191, 58);
+            regButton.Size = new Size(189, 61);
             regButton.TabIndex = 3;
             regButton.Text = "Registrar";
             regButton.UseVisualStyleBackColor = false;
@@ -81,16 +87,19 @@
             // 
             // closeBtn
             // 
-            closeBtn.BackColor = Color.HotPink;
+            closeBtn.BackColor = Color.Transparent;
+            closeBtn.BackgroundImage = Properties.Resources.naranja;
+            closeBtn.BackgroundImageLayout = ImageLayout.Stretch;
             closeBtn.FlatAppearance.BorderSize = 0;
             closeBtn.FlatAppearance.MouseOverBackColor = Color.LightPink;
             closeBtn.FlatStyle = FlatStyle.Flat;
-            closeBtn.Font = new Font("Segoe UI", 10.8F);
+            closeBtn.Font = new Font("Segoe UI", 14.25F);
             closeBtn.Image = Properties.Resources.icons8_macos_close_50;
             closeBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            closeBtn.Location = new Point(261, 741);
+            closeBtn.Location = new Point(281, 707);
+            closeBtn.Margin = new Padding(3, 2, 3, 2);
             closeBtn.Name = "closeBtn";
-            closeBtn.Size = new Size(193, 58);
+            closeBtn.Size = new Size(191, 61);
             closeBtn.TabIndex = 4;
             closeBtn.Text = "Cerrar";
             closeBtn.UseVisualStyleBackColor = false;
@@ -99,28 +108,29 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(482, 199);
+            dataGridView1.Location = new Point(504, 111);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1245, 600);
+            dataGridView1.Size = new Size(1262, 675);
             dataGridView1.TabIndex = 5;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(52, 146);
+            label1.Location = new Point(84, 111);
             label1.Name = "label1";
-            label1.Size = new Size(387, 54);
+            label1.Size = new Size(312, 45);
             label1.TabIndex = 6;
             label1.Text = "REGISTRAR CLIENTE:";
             // 
             // RegClienteForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1824, 861);
+            ClientSize = new Size(1832, 927);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Controls.Add(closeBtn);
@@ -129,6 +139,7 @@
             Controls.Add(telCliente);
             Controls.Add(nCliente);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "RegClienteForm";
             Text = "RegClienteForm";
             Load += RegClienteForm_Load;
