@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUTTERFLYNAILSCENTERSw", "BUTTERFLYNAILSCENTERSw\BUTTERFLYNAILSCENTERSw.csproj", "{09CF8B76-B15B-4106-84E1-D3851CDD3343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUTTERFLYNAILSCENTERSw.DataAccess", "BUTTERFLYNAILSCENTERSw.DataAccess\BUTTERFLYNAILSCENTERSw.DataAccess.csproj", "{79FE987F-A1D4-466B-AE15-0FE609C0292A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CF8B76-B15B-4106-84E1-D3851CDD3343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CF8B76-B15B-4106-84E1-D3851CDD3343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CF8B76-B15B-4106-84E1-D3851CDD3343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CF8B76-B15B-4106-84E1-D3851CDD3343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FE987F-A1D4-466B-AE15-0FE609C0292A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FE987F-A1D4-466B-AE15-0FE609C0292A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FE987F-A1D4-466B-AE15-0FE609C0292A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FE987F-A1D4-466B-AE15-0FE609C0292A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {012E142C-6926-43BF-922E-801E1BF3E83C}
+	EndGlobalSection
+EndGlobal
