@@ -7,7 +7,8 @@ namespace BUTTERFLYNAILSCENTERSw.DataAccess.Modelos;
 
 public partial class ButterflyNailsDbContext : DbContext
 {
-    const string conString = "server=localhost;port=3306;database=BUTTERFLY_NAILS_DB;user=Tannymarr;password=TannyMarrRodriguez20._";
+    // const string conString = "server=localhost;port=3306;database=BUTTERFLY_NAILS_DB;user=Tannymarr;password=TannyMarrRodriguez20._";
+    // const string conString = "server=localhost;port=3306;database=BUTTERFLY_NAILS_DB;user=root;password=*-.3nM4Nu310202.-*";
     public ButterflyNailsDbContext()
     {
     }
@@ -31,7 +32,7 @@ public partial class ButterflyNailsDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseMySql(conString, MySqlServerVersion.AutoDetect(conString));
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -136,7 +137,7 @@ public partial class ButterflyNailsDbContext : DbContext
             entity.Property(e => e.FechaDeRegistro)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("datetime");
-          
+
 
             entity.HasOne(d => d.Cita).WithMany(p => p.Ventaservicios)
                 .HasForeignKey(d => d.CitaId)
