@@ -14,6 +14,11 @@ namespace BUTTERFLYNAILSCENTERSw
         void FuncionLogin()
         {
             int retries = 0;
+            if (!ConfirmarCampos())
+            {
+                MessageBox.Show("No pueden haber campos vacios. ");
+                return;
+            }
             string? username = unTextBox.Text;
             string? contrasena = passTextBox.Text;
             using (var _DBContext = new ButterflyNailsDbContext())
@@ -47,6 +52,9 @@ namespace BUTTERFLYNAILSCENTERSw
 
             }
         }
+        bool ConfirmarCampos()
+           => !String.IsNullOrWhiteSpace(unTextBox.Text) &&
+              !String.IsNullOrWhiteSpace(passTextBox.Text);
         private void logButton_Click(object sender, EventArgs e)
         {
             FuncionLogin();

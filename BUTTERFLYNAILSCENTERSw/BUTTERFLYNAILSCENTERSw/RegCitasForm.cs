@@ -39,8 +39,18 @@ namespace BUTTERFLYNAILSCENTERSw
 
                 using (var _DBContext = new ButterflyNailsDbContext())
                 {
+
+                    if (!ConfirmarCampos())
+                    {
+                        MessageBox.Show("No pueden haber campos vacios. ");
+                        return;
+
+                    }
                     var clienteParaLaCita = _DBContext.Clientes.FirstOrDefault(x => x.Nombre == nombreClienteComboBox.Text);
                     var servicioParaLaCita = _DBContext.Servicios.FirstOrDefault(x => x.Nombre == servicioComboBox.Text);
+
+
+
                     var nuevaCita = new Cita
                     {
                         ClienteId = clienteParaLaCita!.Id,
@@ -62,7 +72,9 @@ namespace BUTTERFLYNAILSCENTERSw
             }
 
         }
-
+        bool ConfirmarCampos()
+            => !String.IsNullOrWhiteSpace(nombreClienteComboBox.Text) &&
+               !String.IsNullOrWhiteSpace(servicioComboBox.Text);
         void InsertarClientesComboBox()
         {
             using (ButterflyNailsDbContext _DBContext = new())

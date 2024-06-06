@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BUTTERFLYNAILSCENTERSw
 {
@@ -29,6 +30,12 @@ namespace BUTTERFLYNAILSCENTERSw
             {
                 using (var _DBContext = new ButterflyNailsDbContext())
                 {
+                    if (!ConfirmarCampos())
+                    {
+                        MessageBox.Show("No pueden haber campos vacios. ");
+                        return;
+
+                    }
                     var nuevoMetodoDePago = new Metodosdepago
                     {
                         Nombre = comboBox1.Text,
@@ -67,6 +74,8 @@ namespace BUTTERFLYNAILSCENTERSw
         {
             this.Close();
         }
+        bool ConfirmarCampos()
+            => !String.IsNullOrWhiteSpace(comboBox1.Text);
 
         private void RegMetodoDePagoForm_Load(object sender, EventArgs e)
         {

@@ -32,6 +32,12 @@ namespace BUTTERFLYNAILSCENTERSw
             {
                 using (var _DBContext = new ButterflyNailsDbContext())
                 {
+
+                    if (!ConfirmarCampos())
+                    {
+                        MessageBox.Show("No pueden haber campos vacios");
+                        return;
+                    }
                     var nuevoUsuario = new Usuario
                     {
                         Username = nNombreUsuariotb.Text,
@@ -60,7 +66,11 @@ namespace BUTTERFLYNAILSCENTERSw
             }
 
         }
-
+        bool ConfirmarCampos()
+            => !String.IsNullOrWhiteSpace(nNombreUsuariotb.Text) &&
+               !String.IsNullOrWhiteSpace(nPasswordtb.Text) &&
+               !String.IsNullOrWhiteSpace(nPasswordtb.Text) &&
+               !String.IsNullOrWhiteSpace(comboBox1.Text);
         void InsertarDatosEnElGrid()
         {
             using (var dbcontext = new ButterflyNailsDbContext())
